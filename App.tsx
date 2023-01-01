@@ -10,6 +10,7 @@
 
 import React, {type PropsWithChildren} from 'react';
 import { SafeAreaView, Text, View } from 'react-native';
+import Greetings from './Components/Greeting';
 
 import {
 } from 'react-native/Libraries/NewAppScreen';
@@ -19,7 +20,8 @@ const App = () => {
   return (
     <SafeAreaView>
       <View>
-        <Text>Hello World</Text>
+        {/*주석이 디게 특이하네..*/}
+       <Greetings name ="Props"/>
       </View>
     </SafeAreaView>
   );
