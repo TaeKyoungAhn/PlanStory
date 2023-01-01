@@ -8,13 +8,13 @@
  * @format
  */
 
-import React, {type PropsWithChildren} from 'react';
+import React, {type PropsWithChildren ,useState} from 'react';
 import { SafeAreaView, Text, View } from 'react-native';
 import Greetings from './Components/Greeting';
 
+
 import {
 } from 'react-native/Libraries/NewAppScreen';
-
 
 const App = () => {
   return (
