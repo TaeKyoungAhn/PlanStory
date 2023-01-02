@@ -9,7 +9,7 @@
  */
 
 import React, {type PropsWithChildren ,useState} from 'react';
-import { SafeAreaView, Text, View } from 'react-native';
+import { SafeAreaView, Text, View, Button } from 'react-native';
 import Greetings from './Components/Greeting';
 
 
