@@ -10,28 +10,29 @@
 
 import React, {type PropsWithChildren ,useState} from 'react';
 import { SafeAreaView, Text, View, Button } from 'react-native';
-import { NavigationContainer, createNavigationContainerRef } from '@react-navigation/native';
-import { createBottomTabNavigator, createMaterialTopTabNavigator } from 'react-navigation-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+
 
 import Home from './src/screens/Home';
 import PlanNotify from './src/screens/PlanNotify';
 import PlanPage from './src/screens/PlanPage';
 import PlanStory from './src/screens/PlanStory';
 import PlanSettings from './src/screens/PlanSettings';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import {
-} from 'react-native/Libraries/NewAppScreen';
-
-
-const BottomTab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <View>
-            
-      </View>
-    </SafeAreaView>
+  <NavigationContainer>
+        <Tab.Navigator>
+           <Tab.Screen name='Home' component={Home}/>
+           <Tab.Screen name='PlanPage' component={PlanPage}/>
+           <Tab.Screen name='PlanStory' component={PlanStory}/>
+           <Tab.Screen name='PlanNotify' component={PlanNotify}/>
+           <Tab.Screen name='PlanSettings' component={PlanSettings}/>
+        </Tab.Navigator>
+  </NavigationContainer>            
   );
 };
 
