@@ -24,7 +24,7 @@ const Tab = createBottomTabNavigator();
 
 const App = () => {
   return (
-  <NavigationContainer>
+     <NavigationContainer>
         <Tab.Navigator>
            <Tab.Screen name='Home' component={Home}/>
            <Tab.Screen name='PlanPage' component={PlanPage}/>
@@ -32,7 +32,7 @@ const App = () => {
            <Tab.Screen name='PlanNotify' component={PlanNotify}/>
            <Tab.Screen name='PlanSettings' component={PlanSettings}/>
         </Tab.Navigator>
-  </NavigationContainer>            
+    </NavigationContainer>            
   );
 };
 
