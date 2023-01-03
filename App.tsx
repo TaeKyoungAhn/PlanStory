@@ -13,11 +13,11 @@ import { SafeAreaView, Text, View, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
 
-import Home from './src/screens/Home';
-import PlanNotify from './src/screens/PlanNotify';
-import PlanPage from './src/screens/PlanPage';
-import PlanStory from './src/screens/PlanStory';
-import PlanSettings from './src/screens/PlanSettings';
+import Home from './src/screens/HomeFolder/Home';
+import PlanNotify from './src/screens/PlanNotifyFolder/PlanNotify';
+import PlanPage from './src/screens/PlanPageFolder/PlanPage';
+import PlanStory from './src/screens/PlanStoryFolder/PlanStory';
+import PlanSettings from './src/screens/PlanSettingsFolder/PlanSettings';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();

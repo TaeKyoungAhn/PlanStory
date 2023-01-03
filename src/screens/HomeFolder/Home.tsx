@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Button } from "react-native";
-import Greetings from '../../Components/Greeting';
+import Greetings from '../../../Components/Greeting';
 
 
 const Home = () => {
